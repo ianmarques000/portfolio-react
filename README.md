@@ -2,7 +2,7 @@
 
 Esse é o meu portfólio, feito em React com Vite pra apresentar quem eu sou, o que já fiz e como me chamar. O site tem português e inglês.
 
-Link do site: https://site.onrender.com
+Link do site: https://portfolio-ianmarques.onrender.com/
 
 Repositório: https://github.com/ianmarques000/portfolio-react
 
