@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-ian-marques",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^5.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  },
+  "description": "Portfólio profissional em React + Vite com versões em português e inglês",
+  "engines": {
+    "node": ">=18"
+  }
+}

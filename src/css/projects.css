@@ -1,0 +1,24 @@
+.decor--flip{transform:scaleX(-1)}
+
+.shot{
+  height:auto;
+  border:1px solid rgba(255,255,255,.35);
+  box-shadow:0 calc(14*var(--u)) calc(40*var(--u)) rgba(0,0,0,.55);
+}
+.shot--a{transform:rotate(1.4deg)}
+.shot--b{transform:rotate(-1.6deg)}
+
+.f-desc--paras p+p{margin-top:calc(20*var(--u))}
+
+@media (max-width:1024px){
+  .f-about,.f-meta,.f-desc,.f-link,.j-title,.j-meta,.j-desc{left:auto!important;top:auto!important}
+  .py{width:3.2rem!important;order:-2}
+  .py.py--stack{width:4.2rem!important}
+  .tech-row{order:-2}
+  .shot{width:100%!important;max-width:34rem;align-self:center;transform:none!important}
+  #projects .stage+.stage{padding-top:2.5rem}
+  .f-desc--paras p+p{margin-top:1rem}
+}
+
+.tech-row{display:flex;align-items:center;gap:calc(16*var(--u))}
+.tech-row img{height:calc(88*var(--u));width:auto;max-width:none}

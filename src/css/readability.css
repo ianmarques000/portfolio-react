@@ -1,0 +1,39 @@
+:root{--scrim:.11;--scrim-color:rgba(0,0,0,var(--scrim))}
+
+.stage{z-index:0}
+.decor{z-index:-2}
+
+.f-about,
+.f-meta,.f-desc,.f-link,
+.j-title,.j-meta,.j-desc{
+  text-shadow:0 0 calc(8*var(--u)) rgba(0,0,0,.6);
+}
+.f-about::before,
+.f-meta::before,.f-desc::before,.f-link::before,
+.j-title::before,.j-meta::before,.j-desc::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:var(--scrim-color);
+  border-radius:calc(40*var(--u));
+  box-shadow:0 0 calc(56*var(--u)) calc(40*var(--u)) var(--scrim-color);
+}
+
+.contact__lead,.contact__list{
+  width:fit-content;
+  background:var(--scrim-color);
+  border-radius:.4em;
+  box-shadow:0 0 1.4em 1em var(--scrim-color);
+}
+
+.dock a,.lang button{text-shadow:0 0 .7em rgba(0,0,0,.95),0 0 .3em rgba(0,0,0,.8)}
+
+@media (max-width:1024px){
+  .f-about,.f-meta,.f-desc,.f-link,.j-title,.j-meta,.j-desc{position:relative!important}
+}
+
+.bg{filter:brightness(.7)}
+
+.decor{filter:brightness(.8)}
