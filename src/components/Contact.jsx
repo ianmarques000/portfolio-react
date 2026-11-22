@@ -1,7 +1,19 @@
 import star from '../assets/detail_asset7.webp'
+import iconEmail from '../assets/icon-email.webp'
+import iconYoutube from '../assets/icon-youtube.webp'
+import iconLinkedin from '../assets/icon-linkedin.webp'
+import iconGithub from '../assets/icon-github.webp'
+import '../css/contact-icons.css'
 import { contactLinks } from '../data/content.js'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import ContactForm from './ContactForm.jsx'
+
+const icons = {
+  'E-mail': iconEmail,
+  YouTube: iconYoutube,
+  LinkedIn: iconLinkedin,
+  GitHub: iconGithub,
+}
 
 export default function Contact() {
   const { t } = useLang()
@@ -14,11 +26,16 @@ export default function Contact() {
         <div className="contact__body">
           <div className="contact__info">
             <p className="contact__lead">{c.lead}</p>
-            <ul className="contact__list">
+            <ul className="contact__list contact__icons">
               {contactLinks.map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} {...(l.external ? { target: '_blank', rel: 'noopener' } : {})}>
-                    {l.label}
+                  <a
+                    href={l.href}
+                    aria-label={l.label}
+                    title={l.label}
+                    {...(l.external ? { target: '_blank', rel: 'noopener' } : {})}
+                  >
+                    <img src={icons[l.label]} alt="" width="512" height="512" />
                   </a>
                 </li>
               ))}

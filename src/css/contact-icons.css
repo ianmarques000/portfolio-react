@@ -1,0 +1,24 @@
+.contact__list.contact__icons{
+  display:flex;flex-wrap:wrap;align-items:center;
+  gap:2cqw;
+}
+.contact__list.contact__icons a{
+  display:flex;align-items:center;justify-content:center;
+  width:3.6cqw;height:3.6cqw;
+  text-decoration:none;
+  transition:opacity .2s ease,transform .2s ease;
+}
+.contact__list.contact__icons a:hover,
+.contact__list.contact__icons a:focus-visible{
+  opacity:1;transform:translateY(-.3cqw) scale(1.08);
+}
+.contact__list.contact__icons img{
+  display:block;width:100%;height:100%;object-fit:contain;
+}
+
+@media (max-width:1024px){
+  .contact__list.contact__icons{gap:1.1rem}
+  .contact__list.contact__icons a{width:2.6rem;height:2.6rem}
+  .contact__list.contact__icons a:hover,
+  .contact__list.contact__icons a:focus-visible{transform:none}
+}

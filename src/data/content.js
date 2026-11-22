@@ -136,7 +136,7 @@ export const content = {
 }
 
 export const contactLinks = [
-  { label: 'E-mail', href: 'mailto:deadmxne@email.com' },
+  { label: 'E-mail', href: 'mailto:deadmxne@gmail.com' },
   { label: 'YouTube', href: 'https://www.youtube.com/@DEADMXNE', external: true },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ianpoty/', external: true },
   { label: 'GitHub', href: 'https://github.com/ianmarques000', external: true },
